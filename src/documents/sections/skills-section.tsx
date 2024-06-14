@@ -14,8 +14,6 @@ export function SkillItem({ skill }: SkillItemProps) {
   return <GroupItem title={skill.name} description={description} />;
 }
 
-//
-
 type Props = {
   skills: Array<Skill | null>;
   theme: Theme;
@@ -24,9 +22,11 @@ type Props = {
 export function SkillsSection({ skills, theme }: Props) {
   return (
     <GroupedSection theme={theme} title="Skills">
-      {skills.map(
-        (skill, index) => skill && <SkillItem key={index} skill={skill} />
-      )}
+      <div className="skills-grid">
+        {skills.map(
+          (skill, index) => skill && <SkillItem key={index} skill={skill} />
+        )}
+      </div>
     </GroupedSection>
   );
 }
