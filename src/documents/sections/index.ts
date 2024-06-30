@@ -7,3 +7,4 @@ export * from "./awards-section";
 export * from "./certificates-section";
 export * from "./publications-section";
 export * from "./volunteer-section";
+export * from "./summary-section";

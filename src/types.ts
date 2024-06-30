@@ -26,6 +26,10 @@ export type Basics = {
   profiles?: Array<Profile>;
 };
 
+export type Summary = {
+  summary?: Array<string | null>;
+};
+
 export type Skill = {
   name?: string;
   keywords?: Array<string>;
@@ -89,8 +93,9 @@ export type Meta = {
 
 export type Resume = {
   basics?: Basics;
-  work?: Array<Job | null>;
+  highlight?: Array<Highlights | null>;
   skills?: Array<Skill | null>;
+  work?: Array<Job | null>;
   projects?: Array<Project | null>;
   education?: Array<EducationPlace | null>;
   awards?: Array<Award | null>;

@@ -11,6 +11,7 @@ import {
   SkillsSection,
   VolunterrSection,
   WorkSection,
+  SummarySection,
 } from "./sections";
 import { Theme, createTheme } from "./theme";
 import { Bar } from "./bar";

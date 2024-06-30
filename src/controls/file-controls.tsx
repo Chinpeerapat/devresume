@@ -16,7 +16,7 @@ export function FileControls({ onSave, onOpen, onNew, style }: Props) {
         title="About"
         data-testin="about"
         target="_blank"
-        href="https://github.com/vangelov/devresume"
+        href="https://github.com/chinpeerapat/devresume"
       >
         <InfoIcon size={16} />
       </a>
